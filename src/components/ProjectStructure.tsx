@@ -167,7 +167,7 @@ const ProjectStructure: React.FC = () => {
   ]);
 
   const [activeView, setActiveView] = useState<'overview' | 'tasks' | 'team' | 'completed' | 'pending'>('overview');
-  const [selectedProject, setSelectedProject] = useState<string>('1');
+  const [selectedProject] = useState<string>('1');
   const [showTaskModal, setShowTaskModal] = useState(false);
   const [showSuggestionModal, setShowSuggestionModal] = useState(false);
 

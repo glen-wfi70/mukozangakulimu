@@ -10,10 +10,6 @@ import TeamNavbar from './components/TeamNavbar';
 import ProfileLoginModal from './components/ProfileLoginModal';
 import { TeamMember } from './types/team';
 
-interface LoginProps {
-  onLogin: (username: string, password: string, user?: TeamMember) => void;
-}
-
 const App: React.FC = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [activeTab, setActiveTab] = useState<'globe' | 'projects' | 'calculator' | 'calendar' | 'finance' | 'dashboard'>('globe');
